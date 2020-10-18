@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <system>
+            <children>
+                <vs7_emailtester translate="title" module="vs7_emailtester">
+                    <title>Email Tester</title>
+                    <action>adminhtml/emailtester</action>
+                    <sort_order>61</sort_order>
+                </vs7_emailtester>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <vs7_emailtester>
+                                        <title>Email Tester</title>
+                                    </vs7_emailtester>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

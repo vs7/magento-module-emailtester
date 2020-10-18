@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <VS7_EmailTester>
+            <version>0.1.0</version>
+        </VS7_EmailTester>
+    </modules>
+    <global>
+        <models>
+            <vs7_emailtester>
+                <class>VS7_EmailTester_Model</class>
+            </vs7_emailtester>
+        </models>
+        <helpers>
+            <vs7_emailtester>
+                <class>VS7_EmailTester_Helper</class>
+            </vs7_emailtester>
+        </helpers>
+        <blocks>
+            <vs7_emailtester>
+                <class>VS7_EmailTester_Block</class>
+            </vs7_emailtester>
+        </blocks>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <VS7_EmailTester before="Mage_Adminhtml">VS7_EmailTester_Adminhtml</VS7_EmailTester>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
